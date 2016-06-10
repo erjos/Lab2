@@ -1,6 +1,18 @@
 import java.util.Scanner;
 
 public class Adventure {
+	
+	/*
+	//creating a method to try to validate answers according to predetermined options that I set
+	public static String validAnswer(Scanner input){
+		while(!input.equals("turn")){
+			System.out.println("Sorry that's not an option for tonight.");
+			input.nextLine();
+		} 
+		String answer = input.nextLine();
+	}
+	*/
+	
 	public static void main(String[] args) {
 		// create some other variables we'll use throughout the game (favorite
 		// food, beer, etc.)
@@ -59,6 +71,12 @@ public class Adventure {
 					// making sure restart is "n" just in case they entered "y"
 					// earlier, so we can exit this switch statement.
 					restart = "n";
+						if (turn.equalsIgnoreCase("board")){
+							System.out.println();
+						}
+						else {
+							System.out.println();
+						}
 					break;
 				}
 			}
